@@ -1,5 +1,16 @@
 import styled from 'styled-components'
 
+const DivBox = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 950px;
+  background: #fff;
+  padding: 40px;
+  border: transparent;
+  `
+
 const Square = styled.div` //aqui o quadro principal foi chamado de Square, ao ser importado no "Board.js" atraves de S(ponto) todos os atributos serao aplicados
 background: #dfdfdf;
 height: 350px;
@@ -34,7 +45,7 @@ const InputAdress = styled.input`
 background: white;
 height: 35px;
 width: 450px;
-border-color: #c7bdbd;
+border-color: transparent;
 border-radius: 10px;
 display: inline-block;
 margin-left: 15px;
@@ -53,7 +64,7 @@ const Neighborhood = styled.input`
 background: white;
 height: 35px;
 width: 300px;
-border-color: #c7bdbd;
+border-color: transparent;
 border-radius: 10px;
 display: inline-block;
 margin-left: 15px;
@@ -72,7 +83,7 @@ const UF = styled.input`
 background: white;
 height: 35px;
 width: 85px;
-border-color: #c7bdbd;
+border-color: transparent;
 border-radius: 10px;
 display: inline-block;
 margin-left: 15px;
@@ -87,7 +98,9 @@ position: static;
 }
 `
 
-const Button = styled.button`
+const Button = styled.button.attrs({
+    type: 'submit',
+})`
 background: #18ac00;
 color: white;
 border: 0;
@@ -111,6 +124,7 @@ margin-right: 15px;
 `
 
 export const S ={ //ao inves de exportar separadamente pode-se reunir os diferentes atributos em um único (neste caso o "S"), facilitando a exportacao e posterior importacao
+    DivBox,
     Square,
     Input,
     InputAdress,

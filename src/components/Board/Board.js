@@ -3,7 +3,7 @@ import {S} from './Board.elements'; //todos os estilos estão declarados dentro 
 
 const Board = () => {
     return (
-        <div>
+        <S.DivBox>
             <S.Input placeholder="Insira o CEP"></S.Input>
             <S.Button>Pesquisar</S.Button>{/* todos os atributos do botao que estao em "elements" foram aplicados aqui usando-se a tag determinada com seu nome */}
             <S.Square>
@@ -22,7 +22,7 @@ const Board = () => {
                     <S.UF ></S.UF>
                 </div>
             </S.Square>
-        </div>
+        </S.DivBox>
     );
 };
 
