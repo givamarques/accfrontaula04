@@ -1,4 +1,4 @@
-#BuscaCEP
+# BuscaCEP
 Aplicação integra a API ViaCEP com front-end em ReactJS e Styled Components apresentando resultado da busca.
 O layout da aplicação foi desenvolvido pela equipe de Designer da Accenture e foi reproduzido buscando fidelidade ao modelo proposto.
 
