@@ -1,3 +1,13 @@
+#BuscaCEP
+Aplicação integra a API ViaCEP com front-end em ReactJS e Styled Components apresentando resultado da busca.
+O layout da aplicação foi desenvolvido pela equipe de Designer da Accenture e foi reproduzido buscando fidelidade ao modelo proposto.
+
+![image](https://user-images.githubusercontent.com/49195218/126087818-9f8513f8-40d6-4afd-a58c-b9aff39acf01.png)
+
+![image](https://user-images.githubusercontent.com/49195218/126087684-49258a0f-53f0-40a3-a0f7-117ad0f7f555.png)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
