@@ -27,7 +27,7 @@ const Input = styled.input`
 background: white;
 height: 35px;
 width: 450px;
-border-color: #c7bdbd;
+border-color: lightgray;
 border-radius: 10px;
 display: inline-block;
 margin-bottom: 15px;
@@ -35,7 +35,7 @@ justify-content: center;
 align-items: center;
 font-size: 1.2rem;
 position: static;
-::placeholder{
+::placeholder{ //aqui é possivel passar um atributo dentro de outro atributo. No caso, o placeholder dentro do input
     padding-left: 15px;
     color:#c7bdbd;
 }
@@ -43,6 +43,7 @@ position: static;
 
 const InputAdress = styled.input`
 background: white;
+padding-left: 15px;
 height: 35px;
 width: 450px;
 border-color: transparent;
@@ -54,7 +55,7 @@ justify-content: center;
 align-items: center;
 font-size: 1.2rem;
 position: static;
-::placeholder{ //aqui é possivel passar um atributo dentro de outro atributo. No caso, o placeholder dentro do input
+::placeholder{
     padding-left: 10px;
     color:black;
 }
@@ -62,6 +63,7 @@ position: static;
 
 const Neighborhood = styled.input`
 background: white;
+padding-left: 15px;
 height: 35px;
 width: 300px;
 border-color: transparent;
@@ -81,8 +83,9 @@ position: static;
 
 const UF = styled.input`
 background: white;
+padding-left: 15px;
 height: 35px;
-width: 85px;
+width: 55px;
 border-color: transparent;
 border-radius: 10px;
 display: inline-block;
@@ -98,12 +101,10 @@ position: static;
 }
 `
 
-const Button = styled.button.attrs({
-    type: 'submit',
-})`
+const Button = styled.button`
 background: #18ac00;
 color: white;
-border: 0;
+border: transparent;
 height: 35px;
 width: 120px;
 border-radius: 10px;
@@ -113,6 +114,10 @@ justify-content: center;
 align-items: center;
 font-size: 1.2rem;
 position: static;
+&:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+  }
 `
 
 const Title = styled.p`
