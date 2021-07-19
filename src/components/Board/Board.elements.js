@@ -102,7 +102,6 @@ position: static;
 `
 
 const Button = styled.button`
-background: #18ac00;
 color: white;
 border: transparent;
 height: 35px;
@@ -115,7 +114,11 @@ align-items: center;
 font-size: 1.2rem;
 position: static;
 &:disabled {
-    background-color: lightgray;
+    background: lightgray;
+    cursor: not-allowed;
+  }
+  &:enabled {
+    background: #18ac00;
     cursor: not-allowed;
   }
 `
